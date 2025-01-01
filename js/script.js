@@ -33,7 +33,7 @@ burgerBtn.addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
-    if(window.innerWidth > 425) {
+    if(window.innerWidth > 700) {
         burgerBtn.classList.remove('active')
         burgerWindow.classList.add('none')
     }
