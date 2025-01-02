@@ -38,3 +38,37 @@ window.addEventListener('resize', () => {
         burgerWindow.classList.add('none')
     }
 })
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 4,
+    spaceBetween: 17,
+    breakpoints: {
+    1000: {
+        slidesPerView: 4,
+    },
+    
+    700: {
+    slidesPerView: 3,
+    },
+    484: {
+        slidesPerView: 2,
+    },
+    280: {
+        slidesPerView: 1.4,
+        // spaceBetween: 1,
+    },
+    100: {
+        slidesPerView: 1,
+        // spaceBetween: 10,
+    },
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // dynamicBullets: true,
+    },
+});

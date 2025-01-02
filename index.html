@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digiency</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="light-theme">
@@ -120,8 +124,46 @@
                     </div>
                 </div>
             </div>
+            <div class="main__team container">
+                <h6 class="team__title">Team Member</h6>
+                <h2 class="team__subtitle">We Have <br><span>Some Awesome</span> People</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="member__img"><img src="source/team1.png" alt=""></div>
+                            <div class="member__text">
+                                <h5 class="member__name">Gustavo Herwitz</h5>
+                                <p class="h6 member__work">UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member__img"><img src="source/team2.png" alt=""></div>
+                            <div class="member__text">
+                                <h5 class="member__name">Phillip Curtis</h5>
+                                <p class="h6 member__work">Graphic Designer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member__img"><img src="source/team3.png" alt=""></div>
+                            <div class="member__text">
+                                <h5 class="member__name">Talan Torff</h5>
+                                <p class="h6 member__work">Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member__img"><img src="source/team4.png" alt=""></div>
+                            <div class="member__text">
+                                <h5 class="member__name">Abram Vaccaro</h5>
+                                <p class="h6 member__work">App Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
