@@ -308,6 +308,7 @@ body {
     display: flex;
     gap: 5px;
     flex-direction: column;
+    z-index: 100;
 }
 
 .social__item {
@@ -445,6 +446,11 @@ body {
     padding: 25px 40px;
     text-align: center;
     align-items: center;
+    transition: all 0.8s ease;
+}
+
+.row__elem:hover {
+    transform: scale(1.1);
 }
 
 .dark-theme .row__elem {
@@ -505,6 +511,107 @@ body {
     }
 }
 
-@media screen and (max-width: 700px){
-    
+.main__experience {
+    background-color: #FFF7F4;
+    padding: 80px 0;
+}
+
+.dark-theme .main__experience {
+    background-color: #242526;
+}
+
+.experience__container {
+    display: flex;
+    gap: 30px;
+}
+
+.experience__content {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    align-items: start;
+}
+
+.experience__subtitle {
+    font-weight: 600;
+    line-height: 48.28px;
+    margin-top: 25px;
+}
+
+.experience__subtitle span {
+    color: #FF5300;
+}
+
+.experience__text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience__btn {
+    margin-top: 50px;
+}
+
+.experience__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+}
+
+.stats__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 50px 75px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+}
+
+.dark-theme .stats__block {
+    background-color: #3A3B3C;
+}
+
+.stats__title {
+    font-weight: 700;
+    line-height: 59.33px;
+    color: #373737;
+}
+
+.dark-theme .stats__title {
+    color: #FFF7F4;
+}
+
+.stats__subtitle {
+    color: #7B7B7B;
+    font-weight: 500;
+    line-height: 24.72px;
+}
+
+.stats__block:nth-child(2), .stats__block:nth-child(4) {
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 26px 40px;
+    }
+    .experience__container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .experience__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .experience__stats {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .stats__block:nth-child(2), .stats__block:nth-child(4) {
+        top: 0;
+    }
 }
